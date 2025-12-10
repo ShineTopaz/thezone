@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더존한방병원</title>
+
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/common.css"> <!-- header/footer 관련 css -->
+    <link rel="stylesheet" href="../css/medical.css"> <!-- main section -->
+
+    <!-- js -->
+    <!-- defer:순서를 후순위로 -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="../js/common.js"></script> <!-- header/footer -->
+    <script defer src="../js/medical.js"></script> <!-- main section -->
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="logo"><a href="../index.html"> <img src="../image/common/logo.png" alt="logo"></a></div>
+            <ul class="gnb">
+                <li><a href="../sub/info.html">병원소식</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/info.html">더존소개</a></li>
+                        <li><a href="../sub/info.html">병원 층별 안내</a></li>
+                        <li><a href="../sub/info.html">의료진소개</a></li>
+                        <li><a href="../sub/info.html">병원소식</a></li>
+                        <li><a href="../sub/info.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="../sub/chuna.html">더존치료법</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/chuna.html">한방치료법</a></li>
+                        <li><a href="../sub/chuna.html">양방치료법</a></li>
+                        <li><a href="../sub/chuna.html">통증치료</a></li>
+                        <li><a href="../sub/chuna.html">입원집중치료</a></li>
+                        <li><a href="../sub/chuna.html">재활치료</a></li>
+                        <li><a href="../sub/chuna.html">진단검사시스템</a></li>
+                    </ul>
+                </li>
+                <li><a href="../sub/disc.html">통증치료</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/disc.html">목통증</a></li>
+                        <li><a href="../sub/disc.html">어깨통증</a></li>
+                        <li><a href="../sub/disc.html">허리통증</a></li>
+                        <li><a href="../sub/disc.html">고관절통증</a></li>
+                        <li><a href="../sub/disc.html">무릎통증</a></li>
+                        <li><a href="../sub/disc.html">팔통증</a></li>
+                        <li><a href="../sub/disc.html">턱통증</a></li>
+                        <li><a href="../sub/disc.html">발통증</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub/medical.html">진료과</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/medical.html">한방소아과</a></li>
+                        <li><a href="../sub/medical.html">한방내과</a></li>
+                        <li><a href="../sub/medical.html">한방부인과</a></li>
+                        <li><a href="../sub/medical.html">교통사고 • 산재</a></li>
+                    </ul>
+                </li>
+                <li><a href="../sub/help.html">고객지원</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/help.html">예약 • 문의</a></li>
+                        <li><a href="../sub/help.html">고객 문의실</a></li>
+                        <li><a href="../sub/help.html">치료사례</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="m_menu">
+                <p></p>
+            </div>
+        </div>
+
+        <ul class="m_gnb">
+            <div class="m_gnb_top">
+                <div class="m_logo"><img src="../image/main/logo.png" alt="logo"></div>
+                <div class="m_menu">
+                    <p></p>
+                </div>
+            </div>
+            <li><a href="../sub/info.html">병원소식</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/info.html">더존소개</a></li>
+                    <li><a href="../sub/info.html">병원 층별 안내</a></li>
+                    <li><a href="../sub/info.html">의료진소개</a></li>
+                    <li><a href="../sub/info.html">병원소식</a></li>
+                    <li><a href="../sub/info.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="../sub/chuna.html">더존치료법</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/chuna.html">한방치료법</a></li>
+                    <li><a href="../sub/chuna.html">양방치료법</a></li>
+                    <li><a href="../sub/chuna.html">통증치료</a></li>
+                    <li><a href="../sub/chuna.html">입원집중치료</a></li>
+                    <li><a href="../sub/chuna.html">재활치료</a></li>
+                    <li><a href="../sub/chuna.html">진단검사시스템</a></li>
+                </ul>
+            </li>
+            <li><a href="../sub/disc.html">통증치료</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/disc.html">목통증</a></li>
+                    <li><a href="../sub/disc.html">어깨통증</a></li>
+                    <li><a href="../sub/disc.html">허리통증</a></li>
+                    <li><a href="../sub/disc.html">고관절통증</a></li>
+                    <li><a href="../sub/disc.html">무릎통증</a></li>
+                    <li><a href="../sub/disc.html">팔통증</a></li>
+                    <li><a href="../sub/disc.html">턱통증</a></li>
+                    <li><a href="../sub/disc.html">발통증</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../sub/medical.html">진료과</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/medical.html">한방소아과</a></li>
+                    <li><a href="../sub/medical.html">한방내과</a></li>
+                    <li><a href="../sub/medical.html">한방부인과</a></li>
+                    <li><a href="../sub/medical.html">교통사고 • 산재</a></li>
+                </ul>
+            </li>
+            <li><a href="../sub/help.html">고객지원</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/help.html">예약 • 문의</a></li>
+                    <li><a href="../sub/help.html">고객 문의실</a></li>
+                    <li><a href="../sub/help.html">치료사례</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <div class="depth2_bg"></div>
+    </header>
+
+    <div class="banner">
+        <div class="nav">
+            <ul>
+                <li>진료과</li>
+                <li class="next"></li>
+                <li>한방내과
+                    <ul class="drop_menu">
+                        <li><a href="#">한방소아과</a></li>
+                        <li><a href="#">한방내과</a></li>
+                        <li><a href="#">한방부인과</a></li>
+                        <li><a href="#">교통사고•산재</a></li>
+                    </ul>
+                </li>
+                <li class="next"></li>
+                <li>위장•소화기내과
+                    <ul class="drop_menu_2">
+                        <li><a href="#">위장•소화기내과</a></li>
+                        <li><a href="#">비염•호흡기내과</a></li>
+                        <li><a href="#">순환기내과</a></li>
+                        <li><a href="#">다이어트</a></li>
+                        <li><a href="#">감기•독감</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="banner_txt">
+            <h2>위장 · 소화기내과</h2>
+            <p>더존한방병원 소화기내과에서는 식도, 위, 십이지장 등의 상부 위장관,<br>소장 및 대장으로 이루어진 하부위장관과 간·췌장·담도 등 광범위한<br> 소화기질환을 다루고 있습니다.
+            </p>
+        </div>
+    </div>
+
+    <div class="content_1">
+        <h3>소화기질환 진료내용</h3>
+        <ul>
+            <li>
+                <p>- 식도염, 식도궤양 - 역류성 식도염<br>
+                    - 식도운동장애</p>
+            </li>
+            <li>
+                <p>- 기능성 위장 장애 - 위염 - 위궤양<br>- 위하수 - 과민성대장증후군</p>
+            </li>
+            <li>
+                <p>- 담석증 - 담도 결석 - 담낭염<br>
+                    - 담도염 - 담적</p>
+            </li>
+            <li>
+                <p>- 바이러스성 간염 - 알코올성 간염<br> - 간경변증(간경화)</p>
+            </li>
+            <li>
+                <p>- 급성 췌장염 - 만성 췌장염</p>
+            </li>
+        </ul>
+        <p>소화불량, 복통, 변비, 설사, 체중감소, 식욕감퇴, 삼킴곤란, 구토, 구역<br>
+            울렁거림, 목 이물감 등 증상이 있으면 병원에 내원하시기 바랍니다.</p>
+    </div>
+    <div class="content_2">
+        <h3>소화기질환 원인</h3>
+        <ul>
+            <li data-aos="fade-up">
+                <img src="../image/sub/medical_con2_1.png" alt="불규칙한 식습관">
+                <dl>
+                    <dt>불규칙한 식습관</dt>
+                    <dd>소화기는 규칙적인 활동과 휴식이 중요합니다.<br>
+                        폭식, 과식, 야식이나 위에 부담을 주는 불편한 음식, 화학첨가물이 많은 인스턴트나<br>
+                        가공식품 섭취는 소화기에도 부담을 주어 문제를 일으키게 됩니다.</dd>
+                </dl>
+            </li>
+            <li data-aos="fade-up">
+                <img src="../image/sub/medical_con2_2.png" alt="정신적 스트레스">
+                <dl>
+                    <dt>정신적 스트레스</dt>
+                    <dd>소화기는 자율신경에 의해서 조절되므로 스트레스가 증가하면 자율신경 기능이 떨어지게 됩니다.<br>
+                        항진과 저하를 반복하는 중에 염증 및 기능장애를 일으키게 되고, 전신면역 질환에도<br>
+                        영향을 주게 됩니다.</dd>
+                </dl>
+            </li>
+            <li data-aos="fade-up">
+                <img src="../image/sub/medical_con2_3.png" alt="그 외의 원인들">
+                <dl>
+                    <dt>그 외의 원인들</dt>
+                    <dd>불규칙한 수면 및 생활패턴, 운동 부족, 음주과다,<br>
+                        흡연 등은 위장에 나쁜 영향을 주므로 피해야 합니다.</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content_3">
+        <h3>소화기질환 진단 방법</h3>
+        <p>건강한 소화기관 건강을 위해 의학적 · 한의학적 진단과 치료를 함께 합니다.</p>
+        <ul>
+            <li data-aos="fade-in">
+                <img src="../image/sub/medical_con3_1.png" alt="">
+                <p><span>문진 · 체성분검사</span><br>
+                    식이 및 생활습관과 인체상태 파악</p>
+            </li>
+            <li data-aos="fade-in">
+                <img src="../image/sub/medical_con3_2.png" alt="">
+                <p><span>복진 · 맥진</span><br>
+                    특정 부위 촉진으로 소화기 이상 예측</p>
+            </li>
+            <li data-aos="fade-in">
+                <img src="../image/sub/medical_con3_3.png" alt="">
+                <p><span>소변 · 혈액검사</span><br>
+                    대사성 질환, 염증성 질환 및 기능검사</p>
+            </li>
+            <li data-aos="fade-in">
+                <img src="../image/sub/medical_con3_4.png" alt="">
+                <p><span>적외선 체열검사</span><br>
+                    16개의 체열 패턴을 이용한 진단</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content_4">
+        <h3>소화기질환 예방법</h3>
+
+        <ul>
+            <li>절주하고 금연하기</li>
+            <li>규칙적으로 식사하기</li>
+            <li>천천히 꼭꼭 씹어 먹고 과식하지 않기</li>
+            <li>평소 마음을 편하게 갖고 스트레스 피하기</li>
+            <li>짜고, 맵고, 기름진 음식은 줄이기</li>
+            <li>식사 후 바로 눕지 말고 산책하기</li>
+        </ul>
+    </div>
+
+    <div class="content_5">
+        <h3>더존한방병원 소화기질환 치료 방법</h3>
+        <ul>
+            <li>
+                <a href="">
+                    <p class="icon"></p>
+                    <p class="con3_txt">한방치료</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p class="icon"></p>
+                    <p class="con3_txt">양방치료</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p class="icon"></p>
+                    <p class="con3_txt">입원치료</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p class="icon"></p>
+                    <p class="con3_txt">검사시스템</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer_left">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">환자권리장전</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">네트워크 가입문의</a></li>
+            </ul>
+            <p>본사이트의 모든 컨텐츠는 저작권법에 의해 보호를 받는 저작물이므로 무단전제와 무단복제를 엄금합니다.</p>
+            <p>Copyright© The Zone Hospital of Korean Medicine. All rights reserved.</p>
+        </div>
+        <div class="footer_right">
+            <div class="alarm"><img src="../image/common/alarmIcon.png" alt=""></div>
+            <div class="time">
+                <div class="day">
+                    <p>평일</p>
+                    <p>09:30 ~ 21:00</p>
+                    <p>(접수마감 12:20 / 20:20)</p>
+                </div>
+                <div class="holiday">
+                    <p>주말 • 공휴일</p>
+                    <p>09:30 (일요일 10:00) ~ 17:00</p>
+                    <p>(접수마감 12:00 / 16:00)</p>
+                </div>
+                <div class="lunch">
+                    <p>점심시간</p>
+                    <p>13:00 ~ 14:00</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href=""><img src="../image/common/fixed_1.png" alt="">문의하기</a></li>
+            <li><a href=""><img src="../image/common/fixed_2.png" alt="">예약</a></li>
+            <li><a href="info.html"><img src="../image/common/fixed_3.png" alt="">오시는길</a></li>
+            <li><a href="#footer"><img src="../image/common/fixed_4.png" alt="">진료시간</a></li>
+        </ul>
+        <div class="gotop"><a href="#">TOP</a></div>
+    </div>
+</body>
+
+</html>

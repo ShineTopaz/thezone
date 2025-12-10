@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더존한방병원</title>
+
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/common.css"> <!-- header/footer 관련 css -->
+    <link rel="stylesheet" href="../css/help.css"> <!-- main section -->
+
+    <!-- js -->
+    <!-- defer:순서를 후순위로 -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="../js/common.js"></script> <!-- header/footer -->
+    <script defer src="../js/help.js"></script> <!-- main section -->
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="logo"><a href="../index.html"> <img src="../image/common/logo.png" alt="logo"></a></div>
+            <ul class="gnb">
+                <li><a href="../sub/info.html">병원소식</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/info.html">더존소개</a></li>
+                        <li><a href="../sub/info.html">병원 층별 안내</a></li>
+                        <li><a href="../sub/info.html">의료진소개</a></li>
+                        <li><a href="../sub/info.html">병원소식</a></li>
+                        <li><a href="../sub/info.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="../sub/chuna.html">더존치료법</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/chuna.html">한방치료법</a></li>
+                        <li><a href="../sub/chuna.html">양방치료법</a></li>
+                        <li><a href="../sub/chuna.html">통증치료</a></li>
+                        <li><a href="../sub/chuna.html">입원집중치료</a></li>
+                        <li><a href="../sub/chuna.html">재활치료</a></li>
+                        <li><a href="../sub/chuna.html">진단검사시스템</a></li>
+                    </ul>
+                </li>
+                <li><a href="../sub/disc.html">통증치료</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/disc.html">목통증</a></li>
+                        <li><a href="../sub/disc.html">어깨통증</a></li>
+                        <li><a href="../sub/disc.html">허리통증</a></li>
+                        <li><a href="../sub/disc.html">고관절통증</a></li>
+                        <li><a href="../sub/disc.html">무릎통증</a></li>
+                        <li><a href="../sub/disc.html">팔통증</a></li>
+                        <li><a href="../sub/disc.html">턱통증</a></li>
+                        <li><a href="../sub/disc.html">발통증</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub/medical.html">진료과</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/medical.html">한방소아과</a></li>
+                        <li><a href="../sub/medical.html">한방내과</a></li>
+                        <li><a href="../sub/medical.html">한방부인과</a></li>
+                        <li><a href="../sub/medical.html">교통사고 • 산재</a></li>
+                    </ul>
+                </li>
+                <li><a href="../sub/help.html">고객지원</a>
+                    <ul class="depth2">
+                        <li><a href="../sub/help.html">예약 • 문의</a></li>
+                        <li><a href="../sub/help.html">고객 문의실</a></li>
+                        <li><a href="../sub/help.html">치료사례</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="m_menu">
+                <p></p>
+            </div>
+        </div>
+
+        <ul class="m_gnb">
+            <div class="m_gnb_top">
+                <div class="m_logo"><img src="../image/main/logo.png" alt="logo"></div>
+                <div class="m_menu">
+                    <p></p>
+                </div>
+            </div>
+            <li><a href="../sub/info.html">병원소식</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/info.html">더존소개</a></li>
+                    <li><a href="../sub/info.html">병원 층별 안내</a></li>
+                    <li><a href="../sub/info.html">의료진소개</a></li>
+                    <li><a href="../sub/info.html">병원소식</a></li>
+                    <li><a href="../sub/info.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="../sub/chuna.html">더존치료법</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/chuna.html">한방치료법</a></li>
+                    <li><a href="../sub/chuna.html">양방치료법</a></li>
+                    <li><a href="../sub/chuna.html">통증치료</a></li>
+                    <li><a href="../sub/chuna.html">입원집중치료</a></li>
+                    <li><a href="../sub/chuna.html">재활치료</a></li>
+                    <li><a href="../sub/chuna.html">진단검사시스템</a></li>
+                </ul>
+            </li>
+            <li><a href="../sub/disc.html">통증치료</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/disc.html">목통증</a></li>
+                    <li><a href="../sub/disc.html">어깨통증</a></li>
+                    <li><a href="../sub/disc.html">허리통증</a></li>
+                    <li><a href="../sub/disc.html">고관절통증</a></li>
+                    <li><a href="../sub/disc.html">무릎통증</a></li>
+                    <li><a href="../sub/disc.html">팔통증</a></li>
+                    <li><a href="../sub/disc.html">턱통증</a></li>
+                    <li><a href="../sub/disc.html">발통증</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../sub/medical.html">진료과</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/medical.html">한방소아과</a></li>
+                    <li><a href="../sub/medical.html">한방내과</a></li>
+                    <li><a href="../sub/medical.html">한방부인과</a></li>
+                    <li><a href="../sub/medical.html">교통사고 • 산재</a></li>
+                </ul>
+            </li>
+            <li><a href="../sub/help.html">고객지원</a>
+                <ul class="m_depth2">
+                    <li><a href="../sub/help.html">예약 • 문의</a></li>
+                    <li><a href="../sub/help.html">고객 문의실</a></li>
+                    <li><a href="../sub/help.html">치료사례</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <div class="depth2_bg"></div>
+    </header>
+
+    <div class="nav">
+        <ul>
+            <li>고객지원</li>
+            <li class="next"></li>
+            <li>예약·문의
+                <ul class="drop_menu">
+                    <li><a href="#">예약·문의</a></li>
+                    <li><a href="#">고객 문의실</a></li>
+                    <li><a href="#">치료사례</a></li>
+                </ul>
+            </li>
+            <li class="next"></li>
+            <li>진료예약
+                <ul class="drop_menu_2">
+                    <li><a href="#">진료예약</a></li>
+                    <li><a href="#">카카오톡 문의</a></li>
+                    <li><a href="#">네이버톡톡<br>문의</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="reserv">
+        <h2>진료 예약</h2>
+        <div class="notice">
+            <dl>
+                <dt>온라인 진료예약을 신청하시면, 안내 전화를 고객님께 직접 드리고<br>
+                    안내 후 구체적인 진료날짜와 시간을 정하여 진료예약을 도와드립니다.</dt>
+                <dd>빠른 문의 및 예약을 희망하시는 경우 직접 전화주시면 빠른 상담이 가능합니다.
+                    <span>서면 051-791-0070ㅣ부산 051-791-0870ㅣ하단 051-791-0270ㅣ양산 055-785-0000</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend>이름</legend>
+                        <p>이름</p>
+                        <input type="text">
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>휴대폰번호</legend>
+                        <p>휴대폰번호</p>
+                        <input type="text">
+                    </fieldset>
+                </li>
+                <li class="select">
+                    <p>원하는 지역</p>
+                    <select name="region" id="region">
+                        <option value="서면">서면더존한방병원</option>
+                        <option value="부산">부산더존한방병원</option>
+                        <option value="양산">양산더존한방병원</option>
+                        <option value="하단">하단더존한방병원</option>
+                    </select>
+                </li>
+                <li>
+                    <p>진료</p>
+                    <fieldset>
+                        <legend>초진/재진</legend>
+                        <label for="first">
+                            <input type="checkbox" class="checkbox" id="first">
+                            <div class="circle"></div>
+                            초진
+                        </label>
+                        <label for="return">
+                            <input type="checkbox" class="checkbox" id="return">
+                            <div class="circle"></div>
+                            재진
+                        </label>
+                    </fieldset>
+                </li>
+                <li class="select">
+                    <p>원하는 치료</p>
+                    <select name="cure" id="cure">
+                        <option value="목통증">목통증</option>
+                        <option value=" 어깨통증">어깨통증</option>
+                        <option value="허리통증">허리통증</option>
+                        <option value="고관절통증">고관절통증</option>
+                        <option value="무릎통증">무릎통증</option>
+                        <option value="발통증">발통증</option>
+                        <option value="턱통증">턱통증</option>
+                        <option value="한방소아과">한방소아과</option>
+                        <option value="한방내과">한방내과</option>
+                        <option value="한방부인과">한방부인과</option>
+                        <option value="교통사고 • 산재">교통사고 • 산재</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="agree">
+            <div>※ 자세한 내용은 ‘개인정보처리방침’을 참조하시기 바랍니다. <span><a href="#">(내용보기)</a></span></div>
+            <div class="box_wrap">
+                <label for="agree">
+                    <input type="checkbox" class="checkbox" id="agree">
+                    <div class="circle"></div>
+                    위 개인정보 수집 및 이용에 동의합니다.
+                </label>
+                <label for="disagree">
+                    <input type="checkbox" class="checkbox" id="disagree">
+                    <div class="circle"></div>
+                    위 개인정보 수집 및 이용에 동의하지 않습니다.
+                </label>
+            </div>
+        </div>
+
+        <div class="button">온라인 진료예약 신청</div>
+    </div>
+
+
+
+
+    <footer id="footer">
+        <div class="footer_left">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">환자권리장전</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">네트워크 가입문의</a></li>
+            </ul>
+            <p>본사이트의 모든 컨텐츠는 저작권법에 의해 보호를 받는 저작물이므로 무단전제와 무단복제를 엄금합니다.</p>
+            <p>Copyright© The Zone Hospital of Korean Medicine. All rights reserved.</p>
+        </div>
+        <div class="footer_right">
+            <div class="alarm"><img src="../image/common/alarmIcon.png" alt=""></div>
+            <div class="time">
+                <div class="day">
+                    <p>평일</p>
+                    <p>09:30 ~ 21:00</p>
+                    <p>(접수마감 12:20 / 20:20)</p>
+                </div>
+                <div class="holiday">
+                    <p>주말 • 공휴일</p>
+                    <p>09:30 (일요일 10:00) ~ 17:00</p>
+                    <p>(접수마감 12:00 / 16:00)</p>
+                </div>
+                <div class="lunch">
+                    <p>점심시간</p>
+                    <p>13:00 ~ 14:00</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href=""><img src="../image/common/fixed_1.png" alt="">문의하기</a></li>
+            <li><a href=""><img src="../image/common/fixed_2.png" alt="">예약</a></li>
+            <li><a href="info.html"><img src="../image/common/fixed_3.png" alt="">오시는길</a></li>
+            <li><a href="#footer"><img src="../image/common/fixed_4.png" alt="">진료시간</a></li>
+        </ul>
+        <div class="gotop"><a href="#">TOP</a></div>
+    </div>
+</body>
+
+</html>
